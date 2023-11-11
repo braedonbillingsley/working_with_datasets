@@ -1,0 +1,82 @@
+<!-- Braedon Billingsley
+    02/17/23
+    show_data.html
+    HTML sheet for dataset website -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Dataset</title>
+
+    <!-- styles for the page... -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- reference the script with your JS array here... -->
+    <script src="scripts/dataset.js"></script>
+</head>
+
+<body>
+    <main id="left-column">
+        <aside class="crime-info">
+            <h1>State Crime Statistics</h1>
+            <p>From the Unified Crime Reporting Statistics and under the collaboration of the U.S. Department of Justice
+                and
+                the Federal Bureau of Investigation information crime statistics are available for public review. The
+                following data set has information on the crime rates and totals for states across the United States for
+                a
+                wide range of years. The crime reports are divided into two main categories: property and violent crime.
+                Property crime refers to burglary, larceny, and motor related crime while violent crime refers to
+                assault,
+                murder, rape, and robbery. These reports go from 1960 to 2019. <br><br></p>
+            <div>
+                <section>
+                    <label>State:</label>
+                    <span id="stateName"></span>
+                </section>
+                <section>
+                    <label>Year:</label>
+                    <span id="years"></span>
+                </section>
+                <section>
+                    <label>Population:</label>
+                    <span id="populationTotals"></span>
+                </section>
+                <section>
+                    <label>Violent crime rate:</label>
+                    <span id="ratesViolent"></span>
+                </section>
+                <section>
+                    <label>Property crime rate:</label>
+                    <span id="ratesProperty"></span>
+                </section>
+                <section>
+                    <label>Violent crime totals:</label>
+                    <span id="totalsViolent"></span>
+                </section>
+                <section>
+                    <label>Property crime totals:</label>
+                    <span id="totalsProperty"></span>
+                </section>
+
+                <section>
+                    <button id="previous">Previous</button>
+                    <button id="next">Next</button>
+                </section>
+            </div>
+        </aside>
+    </main>
+    <aside id="right-column">
+        <h2>Here are some interesting facts in my dataset!</h2>
+        <ul>
+            <li id="topViolentRate"></li>
+            <li id="decreaseInCrime"></li>
+            <li id="lowViolentRate"></li>
+        </ul>
+    </aside>
+
+    <!-- reference the script with program behavior here... -->
+    <script src="scripts/program_behavior.js"></script>
+</body>
+
+</html>

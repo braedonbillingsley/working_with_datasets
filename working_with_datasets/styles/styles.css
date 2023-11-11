@@ -1,0 +1,110 @@
+/*  Braedon Billingsley
+    02/17/23
+    styles.css
+    stylesheet for dataset project. adds background img and 2 boxes containing crime stats and interesting facts
+    */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-image: url("../images/crimescene.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    color: black;
+}
+
+h1 {
+    color: black;
+    font-size: 36px;
+    margin: 0;
+}
+
+main {
+    color: black;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+section {
+    margin: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+span {
+    text-decoration: underline;
+    display: block;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+aside {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 500px;
+    margin: 20px;
+    z-index: 1;
+    margin-left: 40%;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.crime-info {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    margin-left: 40%;
+}
+
+#topViolentRate {
+    color: red;
+}
+
+#decreaseInCrime {
+    color: purple;
+}
+
+#lowViolentRate {
+    color: orange;
+}
